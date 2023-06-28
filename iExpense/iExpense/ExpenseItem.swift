@@ -8,7 +8,7 @@
 import Foundation
 // Identifiable means that are unique and have an id
 // allows the removal of , id: \.id from the for each 
-struct ExpenseItem: Identifiable, Codable
+struct ExpenseItem: Identifiable, Codable ,Equatable 
 {
     var id = UUID()
     let name: String
